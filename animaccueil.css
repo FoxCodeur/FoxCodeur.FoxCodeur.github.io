@@ -1,0 +1,34 @@
+
+
+/*si format mobile le texte prend 100% de l'espace, 481px, ipad 768px et tablette jusqu'à 810px*/
+
+#desc
+{
+	width:auto;
+	padding:10px;
+}
+@keyframes mon_anim{
+0%{
+transform: translateY(10vh);
+opacity: 0;
+}
+100%{
+transform: translateY(0px);
+opacity: 1;
+}}
+.message
+ 
+ 
+animation-name: mon_anim;
+animation-duration: 3000ms;
+animation-delay: 0ms;
+animation-timing-function: ease-in-out;
+ 
+animation-iteration-count: 1
+ 
+}
+
+
+
+
+

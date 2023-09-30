@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- ------------------------------------------------------BALISES-META-------------------------------------------------------- -->
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Dans l'univers de Logans'run qui se situe en l'an 2116, l'espérance de vie est limitée à 21 ans. Ceux et celles qui au dernier jour tentent de fuir sont poursuivis par la police spéciale, les Sandmen"
+    />
+    <!-- balise pour adapter l'écran à la taille du mobile -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- balise compatibilité edge explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- ------------------------------------------------------BALISES-LINK------------------------------------------------------ -->
+    <link rel="icon" href="images/icones/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" media="screen" />
+    <link rel="stylesheet" href="styles_lexique.css" media="screen" />
+    <link rel="stylesheet" href="definitions_01.css" media="screen" />
+    <link rel="stylesheet" href="definitions_02.css" media="screen" />
+    <link rel="stylesheet" href="players_audio_video.css" media="screen" />
+    <link rel="stylesheet" href="styles_timeline.css" media="screen" />
+    <link rel="stylesheet" href="slider.css" media="screen" />
+    <link rel="stylesheet" href="animaccueil.css" media="screen" />
+    <link rel="stylesheet" href="boutonquimonte.css" media="screen" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Logan's run</title>
+  </head>
+  <!-- ----------------------------------------------------------------- -->
+
+  <body>
+    <section class="progress-bar"></section>
+    <section>
+      <img
+        class="FoxBox"
+        src="
+	  ./images/foxScrollingIndex2.png"
+      /><img class="FoxBox2" src="./images/foxScrollIndex.png" />
+    </section>
+
+    <!-- ------------------------------DEBUT HEADER--------------------------------------------------------------- -->
+    <header>
+      <div class="header_container a_container">
+        <!-- nav est la balise de navigation -->
+        <nav class="d-flex">
+          <!-- ceci est la boite class logo -->
+          <div class="logo">
+            <a href="#">
+              <img
+                src="images/logantitle.png"
+                width="25%"
+                alt="logo texte avec en arriere plan une sphère rouge"
+                align="left"
+              />
+            </a>
+            <!-- ceci est la div onglets de la barre navigation -->
+          </div>
+
+          <ul class="navbar">
+            <li class="onglets">
+              <a href="index.html" class="buttonMobile">Logan's_Run</a>
+            </li>
+            <li class="onglets">
+              <a href="lexique.html" class="buttonMobile">Lexique</a>
+            </li>
+            <li class="onglets">
+              <a href="timeline.html" class="buttonMobile">Timelines</a>
+            </li>
+            <li class="onglets">
+              <a href="games.html" class="buttonMobile">Games</a>
+            </li>
+            <li class="onglets">
+              <a href="blog.html" class="buttonMobile">Blog</a>
+            </li>
+          </ul>
+
+          <div class="cercle-burger">
+            <button class="burger"><span class="bar"></span></button>
+          </div>
+        </nav>
+
+        <!--boite qui contient le titre  -->
+        <div class="principal">
+          <h1 class="message">
+            <i class="fas fa-globe"></i>Flash d'informations
+          </h1>
+          <div id="desc"></div>
+          <p>
+            <br /><time datetime="2116-12-21">21 décembre 2116</time>. Le cycle
+            de vie des SAGITTAIRES 17 s'achève aujourd'hui. Attention, les
+            inscriptions au crématorium doivent s'effectuer trente minutes avant
+            le départ du carrousel. Ne redoute pas tant l'épreuve citoyen, car
+            comme tout un chacun tu renaîtras en tant que bébé dans une citées
+            couveuses. La règle est ainsi faite: l'humain vit vingt et un ans,
+            pas un jour de plus. Prétendre à plus contreviendrait à l'équilibre!
+            Par ailleurs, ce genre de pensées déviantes doivent être
+            systématiquement dénoncées à l'autorité. Nos protecteurs limiers ne
+            tuent pas, ils terminent ceux qui contestent l'ordre, sans
+            exception. Sache bien que la fleur de vie rouge clignotante
+            implantée dans le creux de ta main ne virera jamais au noir, c'est
+            juste impossible. La voici cette immortalité tant convoitée par le
+            peuple: réincarnation! Le compte à rebours tourne Sagitaire 17, il
+            ne te reste maintenant plus que trois heures vingt six minutes et
+            sept seconde avant le prochain Carrousel.<br />La ville de Bordeaux
+            vous souhaite à tous et à toutes une agréable journée. Visiteurs,
+            amis, concitoyens il reste encore des places assises à l'Arena,
+            venez nombreux assister à la purification de vos frères et soeurs.
+            En cette fin d’année 2116, le renouveau va bientôt débuter...
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- -----------------------------------------FIN HEADER------------------------------------------------------------------ -->
+
+    <div class="a_container">
+      <!--On crée notre nouvelle boite qui va contenir deux sections, texte à gauche et image droite  -->
+      <section class="chapitre1 grid">
+        <div class="gauche">
+          <h2>Les Origines de l'oeuvre</h2>
+          <br />
+          <p class="indent">
+            Bien avant d’avoir été adapté au cinéma puis décliné en série TV à
+            la fin des années 70,
+            <a href="logans_run_roman.html">l’Âge de Cristal</a> (Logan’s Run en
+            anglais) a été un roman d’anticipation dystopique, coécrit par
+            <a href="dictionnaire/N/william_f_nolan.html">William F. Nolan</a>
+            et
+            <a href="dictionnaire/j/george_clayton_johnson.html"
+              >George Clayton Johnson</a
+            >. Le livre, publié en 1966, décrit notre société telle qu’elle
+            pourrait évoluer dans un futur proche: à savoir vers un système
+            totalitaire cybernétique où les jeunes, après avoir pris le pouvoir
+            au 21e siècle, confient leur existence à un superordinateur nommé
+            <a href="dictionnaire/T/thinker.html">Le Penseur</a>. Dès lors,
+            aussi bien à cause de la surpopulation que pour éviter de placer
+            leur destin entres les mains des personnes âgées, le nouveau
+            gouvernement fixe un âge limite de vie. Nul homme sur terre ne sera
+            désormais autorisé à vivre au-delà de ses 21 ans (La majorité aux
+            États-Unis). Durant cette brève existence, l’individu, centré sur
+            lui-même, se consacre uniquement au plaisir sous toutes ces formes,
+            drogues, sexe etc... ne travaillent que ceux qui le souhaitent. Le
+            Paradis sur Terre hein, pas vraiment car un détail vient troubler
+            toute cette félicité: en effet, chaque citoyen se voit implanté dés
+            la naissance dans sa paume droite, une
+            <a href="dictionnaire/F/fleur-de-vie.html">fleur de vie</a>. Le
+            cristal, inviolable, change de couleur une fois par septennat. Blanc
+            à la naissance celui-ci passe du jaune au bleu à l’âge de sept ans,
+            du bleu vers le rouge à quatorze, puis vire rouge clignotant au
+            Dernier-Jour et enfin devient noir si le contrevenant ne s’est pas
+            présenté à la cérémonie pour accepter le «sommeil», suicide rituel
+            par crémation.
+          </p>
+          <br />
+        </div>
+
+        <div class="droite">
+          <a href="dictionnaire/L/logans_run_roman.html"
+            ><img
+              src="images/logan's_run_edition_mars_2019.png"
+              alt="edition francaise roman Logan's run, mars 2019"
+          /></a>
+        </div>
+      </section>
+      <!-- -------------------------------------------------------------------------------------------------------------------- -->
+      <section class="chapitre2 grid center_horizontally">
+        <div class="lecarousel">
+          <figure>
+            <img
+              alt="cérémonie carousel"
+              src="images/carousel.png"
+              class="ceremonie_carousel"
+            />
+            <figcaption>La cérémonie du Carousel</figcaption>
+          </figure>
+        </div>
+
+        <div class="paragraphelecarousel">
+          <p>
+            En ce début de 22ème siècle, l'ordre mondial fixe l'espérance de vie
+            des humains à 21 ans. Lors du dernier jour de son existence, chaque
+            citoyen doit impérativement se rendre dans un
+            <a href="dictionnaire/C/carrousel.html">Carrousel</a>, où chaque
+            jour se déroule la fête rituelle du renouveau. Là, les participants
+            qui revêtent l’aube blanche de purification (au préalable drogués)
+            se réunissent autour de l’arène, vaste édifice circulaire, à gradins
+            étagés, occupé en son centre par un cristal rouge. Tous vont mourir
+            pulvérisés par des lasers! Le génocide programmé se déroule tel un
+            moment festif et d’ailleurs le publique enthousiaste ne manque pas
+            de venir assister aux crémations car chacun espère la promesse du
+            renouveau. En effet selon les croyances véhiculés par le Penseur,
+            chaque mise à mort contribue à la naissance d’un bébé. Les
+            <a href="dictionnaire/M/machines.html">machines</a> veillent ainsi à
+            la stabilité de l'accroissement démographique mondial. Cette
+            dictatture a un prix qui vaut sans conteste son pesant d'or car
+            depuis que les hommes ont accepté de sacrifier leur liberté il n'y a
+            plus de guerres, famines, maladie.
+          </p>
+          <br />
+        </div>
+      </section>
+      <!-- --------------------------------------------------------------------------------------------------------------------- -->
+      <section class="slider">
+        <div class="slides">
+          <div><img src="images/image1.png" class="slide" /></div>
+          <div><img src="images/image2.png" class="slide" /></div>
+        </div>
+      </section>
+
+      <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+      <section class="chapitre3 center_horizontally">
+        <div class="antiheros">
+          <h2>L'antihéros</h2>
+          <p>
+            Les <a href="dictionnaire/S/sandman.html">Sandmen</a> (limiers en
+            Français) seuls autorités détenteurs d'une arme à feu, traquent,
+            débusquent et terminent les fugitifs à l’aide de leurs
+            <a href="dictionnaire/R/revolver-limier.html">revolvers</a>
+            ultra-perfectionnés.
+            <a href="dictionnaire/L/logan.html">Logan</a> (notre héros) est un
+            agent du système. Compétiteur dans l'âme ce limier émérite voue une
+            passion sans borne à sa fonction. Il découvre, après avoir accompli
+            son devoir lors d'une banale mission, que le fugitif qu’il vient
+            d’abattre prévoyait de rejoindre le
+            <a href="dictionnaire/S/sanctuaire.html">Sanctuaire</a>, une zone de
+            non droit dissimulée quelque part sur Terre au sein de laquelle
+            hommes et femmes vivent sans règles. Cette population renégate élève
+            ainsi ses propres enfants mais aussi et le plus insuportable, ses
+            habitants peuvent y mourir de vieillesse. Intolérable, Logan n'à
+            qu'une idée en tête, débusquer ce satané refuge jonché de lâches, le
+            détruire, aprés quoi il éliminera l'un aprés l'autre tous les
+            criminels qui s'y sont terrés. Avec ce fait d'arme il deviendra dés
+            lors la Légende parmi les limiers et même une fois réincarné, l'on
+            retiendra son nom pour l'éternité.
+          </p>
+        </div>
+      </section>
+      <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+      <div class="versions-logan grid">
+        <div class="versions">
+          <a href="dictionnaire/L/logan.html"
+            ><img alt="limier Logan" src="images/logan1.png"
+          /></a>
+        </div>
+
+        <div id="textMiddleLogan" class="versions">
+          <a href="dictionnaire/L/logan.html"
+            ><img alt="le limier Logan" src="images/logan2.png"
+          /></a>
+        </div>
+
+        <div class="versions">
+          <a href="dictionnaire/L/logan.html"
+            ><img alt="le limier Logans" src="images/logan3.png"
+          /></a>
+        </div>
+      </div>
+      <div class="tiret"></div>
+      <p id="1" class="par-logan-middle texte-introduction">
+        Il existe plusieurs déclinaisons du héro Logan...
+      </p>
+      <p
+        class="a_container par-logan-middle texte-introduction-timeline-fcolor"
+      >
+        Dans le roman "Logan's Run" de William F. Nolan et George Clayton
+        Johnson, le protagoniste Logan est un "Sandman", policier chargé de
+        traquer les personnes qui refusent de se soumettre à la loi qui les
+        contraint à mourir euthanasiés à l'âge de 21 ans. Dans le livre et le
+        film, Logan a pour mission de trouver le mythique "Sanctuaire", lieu
+        inconnu des machines où vivraient les dissidents au système. Dans le
+        roman, Logan simule sa fuite aux yeux de ses collègues et à l'approche
+        du dernier jour, il ambitionne de trouver le Sanctuaire. Massacrer ceux
+        qui y vivent serait à ses yeux une apothéose. Dans le film, il accepte
+        la mission de THINKER mais reste peu enthousiaste à l'idée de retrouver
+        ce Sanctuaire qu'il ne connaît pas. Dans tous les cas, Logan se prend
+        d'affection pour Jessica, une jeune femme qui cherche également à
+        échapper à la mort programmée, et son amour pour elle le pousse à
+        remettre en question le système qui régit leur société. Sa quête pour
+        découvrir la vérité sur le Sanctuaire et pour sauver Jessica met en
+        évidence les aspects positifs de sa personnalité, montrant qu'il est
+        capable de remettre en question sa propre condition et de se rebeller
+        contre un ordre établi oppressif.
+      </p>
+      <div class="tiret"></div>
+      <!-- --------------------------------------------------------------------------------------------------------------------- -->
+      <div class="btn_basis" id="upSite">
+        <svg
+          width="30px"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 384 512"
+        >
+          <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+          />
+        </svg>
+      </div>
+      <!-- --------------------------------------------------------------------------------------------------------------------- -->
+      <section class="chapitre4 center_horizontally">
+        <div class="genese_film">
+          <h2>Le projet</h2>
+          <p>
+            Au départ lorsque William F. Nolan jette sur le papier le concept de
+            l’Âge de Cristal, ce dernier envisage juste de l'écrire en simple
+            nouvelle. Enthousiaste il fait aussitôt part de l'idée à son ami et
+            écrivain, George Clayton Johnson, qui à la simple lecture du script,
+            voit matière à un bon scénario de film. Donc, convaincus par le
+            potentiel du projet, le duo se met aussitôt au travail. Le roman
+            achevé à l’été 65 est proposé dès le mois de février 1966 à
+            plusieurs grands éditeurs, puis mis en vente sur la scène
+            hollywoodienne. En octobre de la même année, alors que le livre
+            n’est pas encore publié, un producteur indépendant du nom de Stan
+            Canter se dit intéressé par les droits cinématographiques. Canter
+            accepte le prix fixé par Nolan et Johnson : une avance de 10000
+            dollars + 90000 devant être réglés dans les douze mois… (Budget
+            colossal pour l’époque). La transaction mettra cependant plus d’un
+            an à se concrétiser, jusqu’à ce jour où Canter leur annonce qu’il
+            tient le restant de la somme à leur disposition… Ce dernier leur
+            rend ainsi visite chez l’éditeur où il agite devant leurs yeux un
+            chèque de 40000 dollars. Nolan fait remarquer au producteur que la
+            somme ne correspond pas au montant initial négocié, Canter rétorque
+            ne pas pouvoir faire mieux. Face à l’entêtement de Nolan et Johnson
+            qui refusent de brader leur œuvre, Canter déchire le chèque de rage,
+            il leur exhibe alors le morceau de papier sur lequel figure sa
+            signature, puis l’avale ! L’histoire aurait pu s’arrêter là, mais
+            non, en novembre 1967, Nolan et Johnson apprennent que la MGM
+            souhaite acquérir les droits cinématographiques du roman. Les deux
+            auteurs reçoivent un vendredi matin l’offre suivante: 10000 dollars
+            d’avance, 60000 restants à régler Nolan et Johnson s’obstinent et
+            refusent : ils veulent une avance de 15000 dollars, pour un montant
+            total de 100 000 dollars: à prendre ou à laisser. La MGM s’accorde
+            un délai de réflexion. Le studio assure qu’il donnera sa réponse
+            lundi matin à la première heure. Un
+            <span class="majuscule">très long</span> week-end s’ensuit pour les
+            deux auteurs, fort heureusement l’attente n’aura pas été vaine, car
+            la réponse de la MGM arrive en temps et en heure : l’Âge de Cristal
+            sera bien adapté à l’écran, et ce en accord total avec le montant
+            que ses créateurs ont fixé.
+          </p>
+        </div>
+      </section>
+      <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+      <div class="conceptart grid">
+        <div>
+          <img
+            src="images/titre1.png"
+            class="conceptart1"
+            alt="Titre francisé de Logan's run, l'Age de Cristal"
+          />
+        </div>
+
+        <div>
+          <img
+            src="images/titre2.png"
+            class="conceptart2"
+            alt="Titre francisé de Logan's run, l'Age de Cristal"
+          />
+        </div>
+      </div>
+
+      <!-- --------------------------------------------------------------------------------------------------------------------- -->
+      <section class="chapitre5 center_horizontally">
+        <h2>Un film qui a bien failli ne jamais voir le jour</h2>
+        <p>
+          Bien qu'ils soient pavés de louables intentions, le devenir de leur
+          oeuvre reste incertaine. La MGM confie tout d'abord la production du
+          film à George Pal (La Machine à Explorer le Temps, La Guerre des
+          Mondes) et l'écriture du scénario à Richard Maibaum, ce dernier étant
+          connu pour avoir adapté la plupart des James Bond au cinéma. En
+          novembre 1968, Nolan et Johnson reçoivent le reste du paiement des
+          droits cinématographiques. Peu de temps après, Nolan rencontre Maibaum
+          lors d'un déjeuner à Berverly Hills durant lequel ils échangent des
+          idées. Maibaum est alors en pleine phase d'écriture et, selon Nolan,
+          il a la tête bourrée à craquer d’idées stupides, aucunes n'ayant un
+          quelconque lien avec le roman d'origine. En effet, le réalisateur n'a
+          ni plus ni moins l'intention de transformer le personnage de Logan en
+          une sorte de James Bond du futur... Nolan proteste, en vain: l'autre
+          fera le film comme il l’entend. Par chance un imprévu survient : mai
+          1969, George Pal est évincé, le film se retrouve de nouveau à l'état
+          de projet embryonnaire. A ce stade, Nolan reste convaincu que son
+          oeuvre ne verra jamais le jour, sauf que quatre ans plus tard (1973),
+          après maintes déconvenues, le projet finit par enfin trouver preneur :
+          Cette fois-ci c’est à Saul David (Le voyage fantastique) qu’incombe la
+          production du film (Budget : 9 millions de dollars), sur un scénario
+          de Stanley Greenberg. David pense deviner la raison des échecs
+          successifs de ses prédécesseurs George Pal et Irwin Allen dans
+          l’obtention du feu vert de production : trop couteux. Pourquoi ne pas
+          concentrer les différents concepts de l'Age de Cristal en les
+          réunissant en un tout unique, comme les gigantesques cités futuristes
+          décrites dans le roman par exemple : en effet au lieu de se ruiner et
+          en faire plusieurs, quand on peut se contenter d’une seule ? Une cité
+          sous-marine par ex ? Bingo. Avec ce plan de compression, le budget
+          n’atteignait désormais plus les sommets pharaoniques budgétaires
+          nécessaires à la construction d'un Los Angeles du futur... Dan
+          Melnick, directeur de production à la MGM approuve et donne le feu
+          vert nécessaire au début de la production du film. Attention car tout
+          ne demeure pas si simple, même dans le meilleur des mondes, en effet
+          le scénariste Stanley Greenberg malade doit être remplacé au pied levé
+          par David Zelag Goodman. (Erreur monumentale selon William F. Nolan) :
+          Goodman n'avait jusqu'alors jamais écrit de science-fiction, de fait,
+          sa version finale du scénario trahit le concept original sur de
+          nombreux points... L'âge limite de vie est mystérieusement repoussé à
+          30 ans (certaines rumeurs prétendent que le studio avait déjà casté
+          Michael York et Richard Jordan pour tenir les rôles de Logan 5 et
+          Francis 7, et il n'y avait vraiment aucun moyen de faire passer les
+          deux acteurs pour plus jeunes qu’ils n’étaient : Michael York ayant
+          déjà 34 ans lors du tournage, et Richard Jordan, 38 !). De plus, le
+          film fait impasse sur certains points importants du roman, en effet
+          rien ou presque n'est expliqué quant aux raisons du système établi,
+          vie limitée à 30 ans et on n’évoque pas du tout l'aspect sociologique
+          d'une société jeune qui n'apprend plus rien: bref, exit tout ce qui
+          faisait le coeur et l'originalité du roman.
+        </p>
+      </section>
+      <!-- ----------------------------------------------------------------- -->
+      <section class="chapitre6 grid center_horizontally">
+        <div class="gauche">
+          <h2>De somptueux décors</h2>
+          <p>
+            Le tournage va durer trois mois. La maquette de la
+            <a href="dictionnaire/D/domes.html">Cité des Dômes</a> fut à son
+            époque l’une des plus imposantes jamais construites. En ce qui
+            concerne les séquences intérieures de la Cité, les prises de vue ont
+            essentiellemnt eu lieu à Dallas au Texas. Voici la liste des
+            différents lieux de tournage :<br />
+            Dallas Market Center, Apparel Mart & Hullen Mall Fort Worth<br />
+            C’est dans ce gigantesque centre commercial qu’ont été filmées la
+            majorité des séquences d’<a href="dictionnaire/A/arcade.html"
+              >ARCADE</a
+            >. Au cœur de l’Apparel Mart se trouve le Hall dans lequel se
+            déroule l’entrée de la cérémonie du Carrousel, mais aussi la traque
+            du fugitif par Francis et Logan. Le lieu s'utilise habituellement
+            pour les expositions diverses, défilés de mode, il faut dire que ses
+            dimensions sont assez conséquentes : 110 mètres de long sur 60
+            mètres de large pour une hauteur de 24 mètres, soient 5 niveaux. Des
+            centaines de figurants peuvent donc y prendre place sans aucun
+            problème.<br />
+
+            Zales Jewelers International Headquarters, Downtown Dallas Le
+            <a href="dictionnaire/Q/quartier_general_du_gs.html"
+              >quartier Général des limiers</a
+            >
+            est en réalité le siège social des Bijoutiers Zales, situé à Dallas,
+            sur l’Intestat 35. Tous les plans sur lesquels on aperçoit des
+            limiers entrants et sortant du bâtiment ont été tournés au pied du
+            véritable building à Dallas. Le tournage en extérieur a d’ailleurs
+            causé certains désagréments à la production : le chef opérateur
+            remarqua le fait que des nuages se reflétaient sur les vitres, ce
+            qui est anormal pour une cité située sous un dôme opaque. Les nuages
+            ont donc été gommés en postproduction.... Les plans intérieurs ont
+            été quant à eux exécutés dans les Studios de la MGM.<br />
+            Water Gardens, Fort Worth Cette séquence a été filmée quasiment en
+            début de tournage du film. Les Water Gardens se situent à Fort Worth
+            près de Dallas…en plein centre-ville, et non sur une plage comme
+            montré dans le film! Il y a plusieurs techniques de cache qui sont
+            utilisées pour masquer les buildings alentour: une plage a été
+            filmée et intégrée au plan en toile de fond, et un mate painting
+            sera ajouté sur la droite du plan pour dissimuler certains détails
+            et notamment agrandir les Water Gardens. Autres lieux de tournage<br />
+            •Arlington Health Center National Health Studio: gymnase des limiers
+            •Oz Restaurant Night-club, Dallas: Salle d’Amour… •Burton Park
+            Building, Dallas: quartiers Résidentiels •World Trade Mart, Dallas:
+            Autres Salles et Couloirs de la Cité des Dômes
+          </p>
+        </div>
+
+        <div class="chapitre6_droite">
+          <img
+            alt="maquette de ville futuriste"
+            src="images/maquette_citee_des_domes_3.png"
+          />
+        </div>
+      </section>
+      <br />
+      <!-- ----------------------------------------------------------------- -->
+      <section class="chapitre7 grid">
+        <p>
+          Fort du succès du premier roman Nolan écrit la suite (1977), Logan’s
+          World, auquel suivront deux sequels, d’abord Logan’s Search,
+          uniquement en anglais (1980) et enfin, Logan’s Return, éditée 2000.<br />
+          Sinon côté planche à dessin, plusieurs comics existent :
+        </p>
+        <ul>
+          <li>
+            Logan’s Run de Marvel: ici le film de 1976 se divise en sept
+            volumes. Il sera publié en France dans la revue petit format Eclipso
+            des éditions Arédit/Artima en 1978.
+          </li>
+          <li>
+            Logan’s World En 1991, suite au succès de la première adaptation
+            Adventure Comics s'attele à l’adaptation du deuxième roman. (Pas de
+            traduction française)
+          </li>
+
+          <li>
+            Logan’s Run d'Adventure Comics Cette version de Logan’s Run est une
+            fidèle adaptation du premier roman, publié par Adventure Comics.
+            (Pas de traduction française)
+          </li>
+          <li>
+            Logan’s Run Last Day: 24 volumes prévus. Tous les romans vont être
+            abordés, couvrant ainsi dans son intégralité les aventures de Logan,
+            et ce jusqu’à la fin du cycle. Début de la publication, Jan 2010.
+            (Pas de traduction française en prévision).
+          </li>
+        </ul>
+      </section>
+      <div class="tiret"></div>
+      <!-- ---------------------------------------------------------- -->
+      <section class="box_center sectionflower section-zero-flower">
+        <div class="container-flower">
+          <div class="column-left-flower">
+            <h1 class="text-flower text-flower-effect">
+              Fleur de vie : blanche
+            </h1>
+            <p class="text-flower">naissance</p>
+          </div>
+
+          <div class="column-right-flower">
+            <img
+              class="organic-flower"
+              src="./images/flowers-index/white-flower.png"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="box_center sectionflower section-one-flower">
+        <div class="container-flower">
+          <div class="column-left-flower">
+            <h1 class="text-flower text-flower-effect2">
+              Fleur de vie : jaune
+            </h1>
+            <p class="text-flower">de la naissance jusqu'à l'âge de 6 ans</p>
+          </div>
+
+          <div class="column-right-flower">
+            <img
+              class="organic-flower"
+              src="./images/flowers-index/yellow-flower.png"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="box_center sectionflower section-two-flower">
+        <div class="container-flower">
+          <div class="column-left-flower">
+            <h1 class="text-flower text-flower-effect">Fleur de vie : bleue</h1>
+            <p class="text-flower">de 7 à 13 ans</p>
+          </div>
+
+          <div class="column-right-flower">
+            <img
+              class="organic-flower"
+              src="./images/flowers-index/blue-flower.png"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="box_center sectionflower section-three-flower">
+        <div class="container-flower">
+          <div class="column-left-flower">
+            <h1 class="text-flower text-flower-effect2">
+              Fleur de vie : rouge
+            </h1>
+            <p class="text-flower">de 14 à 20 ans</p>
+          </div>
+
+          <div class="column-right-flower">
+            <img
+              class="organic-flower"
+              src="./images/flowers-index/red-flower.png"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="box_center sectionflower section-four-flower">
+        <div class="container-flower">
+          <div class="column-left-flower">
+            <h1 class="text-flower text-flower-effect">
+              Fleur de vie : rouge clignotante
+            </h1>
+            <p class="text-flower">dernier jour</p>
+          </div>
+
+          <div class="column-right-flower">
+            <img
+              class="organic-flower"
+              src="./images/flowers-index/red-flower.png"
+            />
+            <img
+              class="organic-flower blinking-flower"
+              src="./images/flowers-index/black-flower.png"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="box_center sectionflower section-five-flower">
+        <div class="container-flower">
+          <div class="column-left-flower">
+            <h1 class="text-flower text-flower-effect3">
+              Fleur de vie : noire
+            </h1>
+            <p class="text-flower">citoyen renégat</p>
+          </div>
+
+          <div class="column-right-flower">
+            <img
+              class="organic-flower"
+              src="./images/flowers-index/black-flower.png"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ----------------------------------------------------------------- -->
+      <footer class="grid">
+        <div class="contenu_footer">
+          <div class="bloc footer-contact">
+            <form
+              action=""
+              id="formulaire-accueil"
+              class="formulaire-pied-de-page"
+            >
+              <h3>Contactez-nous</h3>
+              <div class="separation-tiret"></div>
+              <div class="corps-formulaire">
+                <div class="corps-formulaire-gauche">
+                  <div class="groupe">
+                    <!-- label libellé -->
+                    <label for="input-prenom">Votre prénom</label>
+                    <!-- pour contraindre l'utilisateur on ajoute l'attribut required dans l'input -->
+                    <input id="input-prenom" type="texte" />
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="groupe">
+                    <label for="input-email">Votre adresse email</label>
+                    <input
+                      id="input-email"
+                      type="email"
+                      id="emailAddress"
+                      placeholder="sophie@example.com"
+                    />
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                </div>
+                <div class="corps-formulaire-droite">
+                  <div class="groupe">
+                    <label for="message">Message</label>
+                    <textarea id="message">Saisissez ici...</textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="pied-formulaire" align="center">
+                <input type="submit" value="valider" />
+              </div>
+            </form>
+            <p style="color: red" id="erreur"></p>
+          </div>
+          <div class="bloc footer-medias">
+            <h3>Réseaux sociaux</h3>
+            <ul class="liste-media">
+              <li class="socials">
+                <a href="https://github.com/FoxCodeur/LOGAN"
+                  >Github
+                  <svg
+                    width="22px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 480 512"
+                  >
+                    <path
+                      d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href=""
+                  >Linkedin
+                  <svg
+                    width="22px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="fox-container">
+              <img src="images/fox-codeur.png" /><svg>
+                <circle
+                  class="fox-container-circle"
+                  cx="125px"
+                  cy="125px"
+                  r="125px"
+                ></circle>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ----------------------------------------------------------------- -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/scrollFoxHide.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/progressBarIndex.js"></script>
+    <script src="js/bouton_qui_monte.js"></script>
+    <script src="js/flowers-index.js"></script>
+    <script src="js/formulaire.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>

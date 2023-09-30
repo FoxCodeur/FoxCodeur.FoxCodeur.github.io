@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Dosis:wght@300;400&family=Oswald:wght@300&family=Poppins:wght@300;500;700&family=Raleway:wght@300;400&family=Roboto:wght@300&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Dosis:wght@300;400&family=Jost:ital,wght@0,300;0,400;1,400&family=Oswald:wght@300&family=Poppins:wght@300;500;700&family=Raleway&family=Roboto:wght@300&family=Ubuntu&family=Varela+Round&display=swap");
+/* mousemove */
+
+.cursor {
+  position: absolute;
+  border-radius: 150px;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border: rgb(0, 30, 94) 2px solid;
+  width: 19px;
+  height: 19px;
+  z-index: -1;
+  transition: 0.2s ease;
+}
+.mouse1 {
+  position: absolute;
+  border-radius: 150px;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  width: 55px;
+  height: 55px;
+  z-index: -2;
+  border: 2px solid black;
+}
+.mouse2 {
+  position: absolute;
+  border-radius: 150px;
+  transform: translate(-50%, -50%);
+  background: #ff0000cd;
+  width: 65px;
+  height: 65px;
+  z-index: -3;
+  border: 2px solid black;
+}
+
+.cursor-cross {
+  cursor: crosshair;
+}
+
+/* -------------------LE BONNETEAU-------------------- */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+.card {
+  transition: 1s;
+  width: 200px;
+  height: 292px;
+  margin: 10px;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  position: absolute;
+  backface-visibility: hidden;
+  height: 292px;
+}
+
+.front {
+  background: url("images/cards/2_de_bleu.png");
+  background-size: 200px;
+  width: 200px;
+  transform: rotateY(180deg);
+}
+
+.back {
+  background: url("images/cards/verso_carte.png");
+  background-size: 200px;
+  width: 200px;
+}
+.back:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 20px 3px #000;
+}
+
+/* animation effet machine à écrire sur le jeu Bonneteau */
+.typewriter_font {
+  font-family: "IBM Plex Sans", monospace;
+}
+.typewriter_container {
+  display: flex;
+  justify-content: flex-start;
+}
+.typewriter_font {
+  font-size: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  animation: typing 3s steps(18);
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.typewriter_font::after {
+  content: "";
+  position: absolute;
+  background: #333;
+  top: 0;
+  right: 0;
+  animation: cursor 1s infinite;
+  /* display block pour pouvoir donner une hauteur et largeur */
+  height: 100%;
+  width: 2px;
+}
+@keyframes cursor {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

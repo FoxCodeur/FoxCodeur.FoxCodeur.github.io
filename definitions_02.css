@@ -1,0 +1,624 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Dosis:wght@300;400&family=Oswald:wght@300&family=Poppins:wght@300;500;700&family=Raleway:wght@300;400&family=Roboto:wght@300&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Dosis:wght@300;400&family=Jost:ital,wght@0,300;0,400;1,400&family=Oswald:wght@300&family=Poppins:wght@300;500;700&family=Raleway&family=Roboto:wght@300&family=Ubuntu&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron:wght@700&family=Raleway&display=swap");
+/*----------------------------- N----------------------------- */
+/* NGC */
+.text-ngc {
+  font-size: 60px;
+  line-height: 9vh;
+  margin: 5px;
+  font-family: "Orbitron", sans-serif;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  font-weight: 900;
+  background: url(./images/logan-earth.jpg);
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.08);
+  animation: zoomout 10s ease 500ms forwards;
+}
+@keyframes zoomout {
+  from {
+    background-size: 40%;
+  }
+  to {
+    background-size: 0;
+  }
+}
+.ngc-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: "Orbitron", sans-serif;
+  font-size: xx-large;
+}
+.humanity-deuxZero {
+  display: flex;
+  justify-content: center;
+}
+
+.humanity,
+.deuxZero {
+  display: flex;
+  margin-left: 10px;
+}
+
+.logo-ngc img {
+  width: 200px;
+}
+.imgNGC2 {
+  position: absolute;
+  width: 360px;
+  top: 9%;
+}
+.ngcText2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Orbitron", sans-serif;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #000000, 1px 2px 1px #000000, 1px 3px 1px #000000,
+    1px 4px 1px #000000, 1px 5px 1px #000000, 1px 6px 1px #000000,
+    1px 7px 1px #000000, 1px 8px 1px #000000, 1px 9px 1px #000000,
+    1px 10px 1px #000000, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+/*----------------------------- O----------------------------- */
+
+/*----------------------------- P----------------------------- */
+/* -----------les personnages de Logan's run ------------------*/
+.cadre-protagonistes {
+  height: 450px;
+  width: 90%;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /*
+* /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=014879&c2=3c2329&gt=r&gd=dbl
+*/
+  background: #014879;
+  background: radial-gradient(at left bottom, #014879, #3c2329);
+  margin-bottom: 30px;
+}
+.menu-protagonistes {
+  position: relative;
+  display: flex;
+  margin: 0 0 20px 15px;
+}
+.button-characters {
+  cursor: pointer;
+  z-index: 10;
+}
+.button-characters::before,
+.button-characters::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 330px;
+  position: absolute;
+  left: 0;
+  background-color: darkred;
+  transition: 0.3s;
+}
+.button-characters::before {
+  top: 0;
+}
+
+.button-characters::after {
+  bottom: 0;
+}
+
+.button-characters:hover::before {
+  transform: translateX(-18%);
+}
+
+.button-characters:hover::after {
+  transform: translateX(18%);
+}
+
+.perso-protagonistes-menu {
+  height: 75px;
+  width: 330px;
+  display: flex;
+  align-items: center;
+  background-color: #014879;
+}
+.perso-protagonistes-menu:hover {
+  background-color: #0060a4;
+}
+.perso-protagonistes-menu .p-left {
+  height: 100%;
+  width: 90px;
+}
+.perso-protagonistes-menu .Jessica-left {
+  background-image: url("images/jessica-head.png");
+  background-size: cover;
+}
+.perso-protagonistes-menu .thinker-left {
+  background-image: url("images/");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.perso-protagonistes-menu .p-right {
+  color: white;
+  font-size: larger;
+  margin-left: 10px;
+  font-family: "Orbitron", sans-serif;
+}
+.perso-protagonistes-menu .p-right h1 {
+  transition: transform 0.2s ease-in-out;
+}
+.perso-protagonistes-menu .p-right h1:hover {
+  transform: translateX(35px);
+}
+.perso-protagonistes-bg {
+  position: absolute;
+}
+.bg-jessica {
+  left: 50%;
+  top: -20%;
+}
+.bg-thinker {
+  left: 50%;
+  top: -146%;
+}
+.bg-logan {
+  left: 50%;
+  top: -272%;
+}
+.perso-protagonistes-bg img {
+  height: 350px;
+  display: none;
+}
+.active .perso-protagonistes-bg img {
+  display: flex;
+}
+/* ----------------------Peau Neuve--------------------------- */
+/* ------button------- */
+.button-margin-new-you {
+  margin-bottom: 70px;
+}
+/* -------------------- */
+.box-pn {
+  position: relative;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.peau-neuve {
+  position: absolute;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 0px 5px 8px #ff0006;
+  width: 100vw;
+  bottom: 10%;
+}
+/* si l'écran fait 600 pixels de large, 1 vw = 6 px. */
+.peau-neuve span {
+  font-size: 6vw;
+  position: relative;
+  letter-spacing: 10px;
+}
+/* odd=paire */
+.peau-neuve span:nth-child(1) {
+  z-index: 11;
+}
+/* even=impaire */
+.peau-neuve span:nth-child(2) {
+  z-index: 9;
+}
+.peau-neuve span:nth-child(3) {
+  z-index: 11;
+}
+.peau-neuve span:nth-child(4) {
+  z-index: 8;
+}
+.peau-neuve span:nth-child(5) {
+  z-index: 11;
+}
+.peau-neuve span:nth-child(6) {
+  z-index: 7;
+}
+.peau-neuve span:nth-child(7) {
+  z-index: 11;
+}
+.peau-neuve img {
+  position: absolute;
+  width: 12%;
+  top: 105%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ligne-peau-neuve {
+  width: 80vw;
+  height: 1.6vw;
+  background-color: #0060a4;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin: 0 auto;
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+}
+/* ------------------------petite guerre---------------------- */
+
+.city-one-container {
+  overflow: hidden;
+  position: relative;
+}
+.city-one {
+  transition: transform 2s ease;
+  transform-origin: center left;
+}
+.city-one:hover {
+  transform: scale(2);
+}
+/* ------------------------pisteur---------------------- */
+
+/* ---------------------les deux boutons----------------- */
+
+.center_container-tracker-buttons {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.container-tracker-buttons {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.container-tracker-buttons :nth-child(1) {
+  margin-right: 5px;
+}
+.tracker-circle {
+  position: absolute;
+  top: -65%;
+  z-index: -10;
+  width: 50%;
+}
+/* -------------------------le track------------------------ */
+.doyle-container {
+  position: relative;
+}
+.tracker {
+  margin: 110px 0 0 20px;
+}
+.doyle-gps {
+  z-index: 10;
+  width: 47.5%;
+  top: 37%;
+  left: 24.5%;
+  border-radius: 5px;
+  position: absolute;
+}
+.doyle-gps,
+.text-tracker-middle {
+  visibility: hidden;
+}
+.redBtn1 {
+  position: absolute;
+  z-index: -10;
+  top: 37%;
+  left: -1%;
+}
+.move-right {
+  animation: moveRight 0.6s ease-in-out;
+}
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.redBtn2 {
+  position: absolute;
+  z-index: -10;
+  top: 57%;
+  left: -1%;
+}
+
+.text-tracker-middle {
+  position: absolute;
+  z-index: 20;
+  top: 38%;
+  left: 29%;
+  font-size: large;
+
+  font-family: "Orbitron", sans-serif;
+  color: rgb(0, 0, 0);
+}
+.text-tracker-back {
+  text-align: center;
+}
+
+/*----------------------------- Q----------------------------- */
+
+/*----------------------------- R----------------------------- */
+/*------------------------- revolver limier -------------------*/
+.container-menu-munitions {
+  position: relative;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 300px;
+  height: 300px;
+}
+.rotate-barillet {
+  transition: transform 2s;
+}
+.rotate-barillet:hover {
+  transform: rotate(360deg) translateZ(0);
+}
+
+.btn-main-menu {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px black solid;
+  background-color: rgb(1, 206, 138);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  cursor: pointer;
+}
+
+.ligne-menu {
+  width: 40px;
+  height: 5px;
+  border-radius: 5px;
+  background: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ligne-menu::before,
+.ligne-menu::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 40px;
+  height: 5px;
+  background: #333;
+  transition: transform 0.5s ease-in-out;
+}
+
+.ligne-menu::before {
+  transform: translateY(-10px);
+}
+.ligne-menu::after {
+  transform: translateY(10px);
+}
+.icone-m {
+  width: 80px;
+}
+.blob {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+/* animation */
+/* si le container a  la class active alors blob 1 se déplace sur la gauche */
+.container-menu-munitions.active .blob1 {
+  top: 48%;
+  left: 82%;
+}
+.container-menu-munitions.active .blob2 {
+  top: 76%;
+  left: 66%;
+}
+.container-menu-munitions.active .blob3 {
+  top: 76%;
+  left: 34%;
+}
+.container-menu-munitions.active .blob4 {
+  left: 17%;
+  top: 48%;
+}
+.container-menu-munitions.active .blob5 {
+  left: 66%;
+  top: 20%;
+}
+.container-menu-munitions.active .blob6 {
+  left: 33%;
+  top: 20%;
+}
+.blob1 {
+  transition: all 0.2s 0.1s ease-in-out;
+}
+.blob2 {
+  transition: all 0.2s 0.2s ease-in-out;
+}
+.blob3 {
+  transition: all 0.2s 0.3s ease-in-out;
+}
+.blob4 {
+  transition: all 0.2s 0.4s ease-in-out;
+}
+.blob5 {
+  transition: all 0.2s 0.5s ease-in-out;
+}
+.blob6 {
+  transition: all 0.2s 0.6s ease-in-out;
+}
+/* type writing des six munitions */
+
+.typewriter_font_bullet {
+  font-family: "IBM Plex Sans", monospace;
+  font-size: 40px;
+  color: darkblue;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.typewriter_font_bullet::after {
+  content: "";
+  position: absolute;
+  background: #333;
+  top: 0;
+  right: 0;
+  animation: cursor 1s infinite;
+  height: 100%;
+  width: 2px;
+}
+@keyframes cursor {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.bullet1,
+.bullet2,
+.bullet3,
+.bullet4,
+.bullet5,
+.bullet6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.bullet-visible-tangler {
+  opacity: 1;
+  visibility: visible;
+  left: 122%;
+  z-index: 10;
+}
+.bullet-visible-nitro {
+  opacity: 1;
+  visibility: visible;
+  left: 102%;
+  top: 86%;
+  z-index: 10;
+}
+.bullet-visible-vapor {
+  opacity: 1;
+  visibility: visible;
+  left: -11%;
+  top: 86%;
+  z-index: 10;
+}
+.bullet-visible-needler {
+  opacity: 1;
+  visibility: visible;
+  left: -31%;
+  top: 47%;
+  z-index: 10;
+}
+.bullet-visible-ripper {
+  opacity: 1;
+  visibility: visible;
+  left: 111%;
+  top: 19%;
+  z-index: 10;
+}
+.bullet-visible-homer {
+  opacity: 1;
+  visibility: visible;
+  left: -14%;
+  top: 19%;
+  z-index: 10;
+}
+
+/*----------------------------- S----------------------------- */
+
+/*----------------------------- T----------------------------- */
+/* ----------------------------TARA--------------------------- */
+.tara {
+  position: relative;
+  height: 180px;
+}
+.tara-inner {
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+
+.letter-tara {
+  color: black;
+  font-family: "Orbitron", sans-serif;
+  font-size: 65px;
+}
+.cristal-tara {
+  position: absolute;
+  width: 70%;
+  left: 210px;
+}
+@media screen and (max-width: 749px) {
+  .cristal-tara {
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    top: 50px;
+    left: 10px;
+  }
+}
+.ct1 {
+  z-index: 20;
+}
+.ct2 {
+  z-index: 19;
+}
+.ct3 {
+  z-index: 18;
+}
+.ct4 {
+  z-index: 17;
+}
+.ct5 {
+  z-index: 16;
+}
+
+/* THINKER */
+.typeWriter {
+  font-size: 1.5rem;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  color: transparent;
+  background: #be0101;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+}
+
+/* https://github.com/EdernClemente/TypeLighterJS-Typewriter */
+
+/*----------------------------- U----------------------------- */
+
+/*----------------------------- V----------------------------- */
+
+/*----------------------------- W----------------------------- */
+
+/*----------------------------- X----------------------------- */
+
+/*----------------------------- Y----------------------------- */
+
+/*----------------------------- Z----------------------------- */

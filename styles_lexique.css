@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Dosis:wght@300;400&family=Oswald:wght@300&family=Raleway:wght@300;400&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap");
+@media screen and (max-width: 749px) {
+  .h1_resize_heightmobil {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+.header {
+  margin-bottom: 20px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+/*-----------positions des éléments BLUEWATER, ADVENTURE COMICS, LOGANS RUN, LOGANS WORLD FILM---------------------------------*/
+.apparitions {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.bandeau_lg {
+  width: 14%;
+  height: 14%;
+}
+@media screen and (max-width: 749px) {
+  .bandeau_lg {
+    width: 55%;
+    height: 55%;
+  }
+}
+
+/*----------------------Animation du cristal situé en haut de la rubrique LEXIQUE----------------------------------*/
+/*la sphère n'apparait pas sur les tablettes et portables*/
+@media screen and (max-width: 749px) {
+  .circle {
+    display: none;
+  }
+}
+.circle {
+  background: darkred;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1px 1px #0000001a;
+  margin-bottom: -70px;
+}
+
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+/* ---------------------------search bar box------------------------------ */
+.search_bar_box {
+  position: relative;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.search_bar {
+  position: absolute;
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+.search_btn {
+  float: right;
+  width: 20px;
+  height: 30px;
+  border-radius: 50%;
+  background: #2f3640c1;
+}
+.search_txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  color: white;
+  font-size: 16px;
+  line-height: 22px;
+  width: 240px;
+}
+.search_bar i {
+  color: white;
+}
+/* liste searching bar */
+.grid-list-search {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.liste-search {
+  transition: 0.9s all;
+  text-decoration: none;
+  color: steelblue;
+  font-weight: bolder;
+  line-height: 1.2;
+  margin: 0 10px;
+}
+.liste-search:hover {
+  color: #b40d0d;
+}
+/*------------------------------------------------LE LEXIQUE DU SITE---------------------------------------------*/
+div.lexique {
+  column-count: 3;
+  column-rule: 1px dotted green;
+  border-left: 1px dotted green;
+  border-right: 1px dotted green;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media screen and (max-width: 749px) {
+  div.lexique {
+    column-count: 1;
+    column-rule: 1px dotted green;
+    border-left: 1px dotted green;
+    border-right: 1px dotted green;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+div.set {
+  display: inline-block;
+  width: 100%;
+  column-break-inside: avoid;
+}
+.chevron-up-down {
+  float: right;
+  padding-right: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+h2.letter {
+  position: sticky;
+  top: 0;
+  color: darkgreen;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: x-large;
+}
+.letter {
+  background-color: lightblue;
+  border: 1px dotted blue;
+}
+/*------------------------------------icones comics romans film------------------- */
+.bluewater_marvel_adventurecomics_romans_film {
+  width: 28px;
+  margin-right: 1px;
+}
+
+/*---------------------------------------------------------------------------------*/
+.teaser {
+  font-size: 22px;
+  text-decoration: none;
+}
+/*------------------------------liens hypertextes définitions----------------------*/
+/*------------------dans l'ordre LINK VISITED ACTIVE HOVER LVHA--------------------*/
+.spoiler a {
+  color: darkblue;
+  transition: 1.2s all;
+}
+
+.spoiler a:visited {
+  color: darkblue;
+}
+.spoiler a:hover {
+  color: darkred;
+}

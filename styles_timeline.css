@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Dosis:wght@300;400&family=Oswald:wght@300&family=Poppins:wght@300;500;700&family=Raleway:wght@300;400&family=Roboto:wght@300&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&family=Orbitron:wght@700&family=Raleway&display=swap");
+.titre_timeline {
+  margin: 0 auto;
+}
+.titre_timeline ul {
+  perspective: 500px;
+  width: 1px;
+}
+.titre_timeline ul:hover li:not(:hover) {
+  opacity: 0.5;
+}
+.titre_timeline li {
+  transform: rotateY(30deg) scaleX(1.3);
+  transform-origin: left;
+  transition: 1s;
+}
+.titre_timeline li:hover {
+  transform: rotateY(3deg);
+}
+.titre_timeline a {
+  text-decoration: none;
+  font-size: 46px;
+  line-height: 1.5;
+}
+.titre_timeline a:visited {
+  color: darkblue;
+}
+
+.box-timeline {
+  width: 100%;
+  height: 3100px;
+  position: relative;
+  padding: 80px 0 250px 0;
+  margin-bottom: 100px;
+}
+/* --------------------------------------------------------- */
+.barre-timeline,
+.barre-timeline2,
+.barre-timeline3,
+.barre-timeline4,
+.barre-timeline5,
+.barre-timeline6,
+.barre-timeline7 {
+  position: absolute;
+  width: 9px;
+  border-radius: 50px;
+  left: 49.7%;
+  background-color: darkblue;
+}
+/* ----------------------barre-timeline----------------------- */
+.barre-timeline {
+  top: 3%;
+  height: 0; /* La hauteur initiale est définie à 0 */
+  transition: height 3s; /* Transition de la propriété "height" sur 2 secondes */
+}
+
+/* Lorsque vous ajoutez la classe "barre-timeline-active", la transition va s'activer */
+.barre-timeline-active {
+  height: 320px;
+}
+/* -------------------------------------------------------------- */
+.barre-timeline2 {
+  top: 13%;
+  height: 0;
+  transition: height 3s; /* Transition de la propriété "height" sur 2 secondes */
+}
+.barre-timeline2-active {
+  height: 710px;
+}
+/* -------------------------------------------------------------- */
+.barre-timeline3 {
+  top: 23%;
+  height: 0;
+  transition: height 3s; /* Transition de la propriété "height" sur 2 secondes */
+}
+.barre-timeline3-active {
+  height: 1120px;
+}
+/* ------------------------------------------------------------- */
+.barre-timeline4 {
+  top: 33%;
+  height: 0;
+  transition: height 3s; /* Transition de la propriété "height" sur 2 secondes */
+}
+.barre-timeline4-active {
+  height: 1600px;
+}
+/* ------------------------------------------------------------- */
+.barre-timeline5 {
+  top: 43%;
+  height: 0;
+  transition: height 3s; /* Transition de la propriété "height" sur 2 secondes */
+}
+.barre-timeline5-active {
+  height: 2000px;
+}
+/* -------------------------------------------------------------- */
+.barre-timeline6 {
+  top: 53%;
+  height: 0;
+  transition: height 3s; /* Transition de la propriété "height" sur 2 secondes */
+}
+.barre-timeline6-active {
+  height: 2400px;
+}
+/* ------------------------------------------------------------- */
+.barre-timeline7 {
+  top: 63%;
+  height: 0;
+  transition: height 3s; /* Transition de la propriété "height" sur 2 secondes */
+}
+.barre-timeline7-active {
+  height: 2710px;
+}
+.ligne {
+  height: 2770px;
+  width: 6px;
+  margin: 0 auto;
+  background: #333;
+}
+
+.rond {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #333;
+  position: absolute;
+  border: 1px solid #000;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+/* 1000 - 160 + 80 / 3 =~ 306 */
+.r1 {
+  top: 80px;
+}
+.r2 {
+  top: 370px;
+}
+.r3 {
+  top: 800px;
+}
+.r4 {
+  top: 1200px;
+}
+.r5 {
+  top: 1640px;
+}
+.r6 {
+  top: 2080px;
+}
+
+.r7 {
+  top: 2470px;
+}
+
+.r8 {
+  top: 2800px;
+}
+.orbered22,
+.orbered33,
+.orbered44,
+.orbered55,
+.orbered66,
+.orbered77,
+.orbered88 {
+  filter: drop-shadow(0 0 1.2rem crimson);
+  transition: 0.5s ease;
+}
+
+.box {
+  color: #333;
+  width: 400px;
+  min-height: 200px;
+  padding: 20px;
+  border-radius: 3px;
+  height: auto;
+  background: #f1f1f1;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.b1 {
+  top: 80px;
+  left: -100px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1.2s;
+}
+.b11 {
+  left: calc(50% - 270px);
+  visibility: visible;
+  opacity: 1;
+}
+.b2 {
+  top: 330px;
+  left: calc(50% + 270px);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.9s;
+}
+.b22 {
+  visibility: visible;
+  opacity: 1;
+}
+.b3 {
+  top: 785px;
+  left: calc(50% - 270px);
+  opacity: 0;
+  transition: 0.9s;
+}
+.b33 {
+  visibility: visible;
+  opacity: 1;
+}
+.b4 {
+  top: 1170px;
+  left: calc(50% + 270px);
+  opacity: 0;
+  transition: 0.8s;
+}
+.b44 {
+  visibility: visible;
+  opacity: 1;
+}
+.b5 {
+  top: 1600px;
+  left: calc(50% - 270px);
+  opacity: 0;
+  transition: 0.9s;
+}
+.b55 {
+  visibility: visible;
+  opacity: 1;
+}
+.b6 {
+  top: 2050px;
+  left: calc(50% + 270px);
+  opacity: 0;
+  transition: 0.9s;
+}
+.b66 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.b7 {
+  top: 2460px;
+  left: calc(50% - 270px);
+  opacity: 0;
+  transition: 0.9s;
+}
+.b77 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.b8 {
+  top: 2790px;
+  left: calc(50% + 270px);
+  opacity: 0;
+  transition: 0.9s;
+}
+.b88 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.box p {
+  line-height: 20px;
+  font-size: 18px;
+  margin: 10px 0 20px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .ligne {
+    position: relative;
+    left: 200px;
+  }
+  .rond {
+    left: calc(50% + 200px);
+  }
+  .box {
+    left: calc(50% - 50px);
+    width: 75%;
+  }
+  .timeline-portable {
+    transform: translateX(-120px);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.3s;
+}
+
+/* // Faire apparaître paragraphe en dessous de La Terre, un jour, décida d'être jeune.
+ */
+.lien {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.texte-introduction {
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+  font-family: "Orbitron", sans-serif;
+}
+.texte-introduction-timeline-fcolor {
+  padding: 5px;
+  background-color: rgba(139, 0, 0, 0.097);
+  border-radius: 25px 25px 25px 25px;
+  -moz-border-radius: 25px 25px 25px 25px;
+  -webkit-border-radius: 25px 25px 25px 25px;
+  border: 2px solid #000000;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.4)
+  );
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ----------------------------------------------------------- */
+.thinkerBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 510px;
+  margin: 0 auto;
+  filter: drop-shadow(2px 5px 10px #000);
+  border: 1px solid rgba(0, 0, 0, 0.219);
+
+  background-color: transparent;
+  animation: backgroundAnimation 10s linear forwards;
+}
+@keyframes backgroundAnimation {
+  0% {
+    background-color: transparent; /* Début avec un fond transparent */
+  }
+  90% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgba(
+      139,
+      0,
+      0,
+      0.53
+    ); /* Devient rouge après 10 secondes */
+  }
+}
+.thinkerBox img {
+  margin: 0.5px;
+  opacity: 0;
+  animation: thinkerAnimation 10s linear infinite;
+}
+.thinkerBox img:nth-child(1) {
+  animation-delay: 8s;
+} /* Image 00 */
+.thinkerBox img:nth-child(2) {
+  animation-delay: 7s;
+} /* Image 03 */
+.thinkerBox img:nth-child(3) {
+  animation-delay: 6s;
+} /* Image 02 */
+.thinkerBox img:nth-child(4) {
+  animation-delay: 5s;
+} /* Image 05 */
+.thinkerBox img:nth-child(5) {
+  animation-delay: 4s;
+} /* Image 07 */
+.thinkerBox img:nth-child(10) {
+  animation-delay: 3s;
+} /* Image 09 */
+.thinkerBox img:nth-child(9) {
+  animation-delay: 2s;
+} /* Image 08 */
+.thinkerBox img:nth-child(8) {
+  animation-delay: 1s;
+} /* Image 06 */
+.thinkerBox img:nth-child(7) {
+  animation-delay: 0s;
+} /* Image 04 */
+.thinkerBox img:nth-child(6) {
+  animation-delay: 9s;
+} /* Image 01 */
+
+@keyframes thinkerAnimation {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

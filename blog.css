@@ -1,0 +1,60 @@
+.wrap-clock {
+  position: relative;
+  background: rgba(93, 133, 93, 0.032);
+  border: 2px solid darkred;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  padding: 5px;
+}
+.minute,
+.heure {
+  position: absolute;
+  height: 100px;
+  width: 6px;
+  background: black;
+  margin: auto;
+  top: -27%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.minute {
+  position: absolute;
+  height: 130px;
+  width: 4px;
+  top: -38%;
+  transform: rotate(90deg);
+}
+.seconde {
+  position: absolute;
+  height: 82px;
+  width: 2px;
+  margin: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: -26%;
+  background: #ff4b3e;
+  transform-origin: bottom center;
+  transform: rotate(180deg);
+}
+.point {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  background: white;
+  border: 2px solid #1b1b1b;
+  border-radius: 50%;
+}

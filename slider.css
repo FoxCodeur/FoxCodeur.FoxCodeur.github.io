@@ -1,0 +1,44 @@
+/*Maquette tablettes et écrans
+(media=screen and min-width: 768px) ;
+(media=screen and min-width: 1024px=*/
+.slider {
+  width: 940px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.slides {
+  width: calc(940px * 2);
+  animation: glisse 14s infinite;
+}
+
+.slide {
+  float: left;
+}
+/*from: 0%, to: 100% animista*/
+@keyframes glisse {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(-940px);
+  }
+  80% {
+    transform: translate(-940px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+/*Maquette tablettes et écrans
+(media=screen and max-width: 768px)*/
+
+@media screen and (max-width: 768px) {
+  .slider {
+    display: none;
+  }
+}

@@ -1,0 +1,40 @@
+
+
+/*si format mobile le texte prend 100% de l'espace, 481px, ipad 768px et tablette jusqu'à 810px*/
+
+.btn img:hover
+
+{
+  -webkit-animation: pulsate-fwd 0.9s ease-in-out both;
+          animation: pulsate-fwd 0.9s ease-in-out both;
+}
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
