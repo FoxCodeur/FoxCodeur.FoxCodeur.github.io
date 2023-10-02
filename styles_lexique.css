@@ -111,31 +111,31 @@
   color: #b40d0d;
 }
 /*------------------------------------------------LE LEXIQUE DU SITE---------------------------------------------*/
+
 div.lexique {
-  column-count: 3;
-  column-rule: 1px dotted green;
-  border-left: 1px dotted green;
-  border-right: 1px dotted green;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  
   margin-left: 100px;
   margin-right: 100px;
   padding-left: 5px;
   padding-right: 5px;
 }
-
-@media (max-width: 1080px) {
+@media screen and (max-width: 749px) {
   div.lexique {
-    column-count: 1;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 5px;
-    padding-right: 5px;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 10px;
+  margin-right: 10px;
   }
 }
 
+
 div.set {
   display: inline-block;
+  border-left: 1px solid rgba(0, 128, 0, 0.7);
+  border-right: 1px solid rgba(0, 128, 0, 0.7);
   width: 100%;
-  column-break-inside: avoid;
 }
 .chevron-up-down {
   float: right;
