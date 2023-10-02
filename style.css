@@ -921,11 +921,6 @@ header nav a:hover {
   text-shadow: 0 1px 0 #999, 0 2px 0 rgb(50, 50, 50), 0 3px 0 rgb(28, 28, 28),
     0 4px 0 rgb(18, 18, 18), 0 5px 0 rgb(0, 0, 0);
 }
-@media screen and (max-width: 721px) {
-  .personnage {
-    font-size: 2.1em
-  }
-}
 @media screen and (min-width: 750px) {
   .glossaire {
     column-count: 2;

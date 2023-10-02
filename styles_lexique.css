@@ -132,10 +132,18 @@ div.lexique {
 
 
 div.set {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   border-left: 1px solid rgba(0, 128, 0, 0.7);
   border-right: 1px solid rgba(0, 128, 0, 0.7);
   width: 100%;
+}
+.illustration{
+  order: 1;
+}
+.definition{
+  order: 2;
 }
 .chevron-up-down {
   float: right;
