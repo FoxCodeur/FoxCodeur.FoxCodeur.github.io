@@ -163,12 +163,18 @@ h2.letter {
 }
 
 /*---------------------------------------------------------------------------------*/
+@media screen and (max-width: 749px) {
+  .teaser {
+    font-size: 2em;
+  }
+}
 .teaser {
   font-size: 1.2em;
   text-decoration: none;
 }
 /*------------------------------liens hypertextes définitions----------------------*/
 /*------------------dans l'ordre LINK VISITED ACTIVE HOVER LVHA--------------------*/
+
 .spoiler a {
   color: darkblue;
   transition: 1.2s all;
