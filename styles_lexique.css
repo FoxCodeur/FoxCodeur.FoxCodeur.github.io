@@ -163,7 +163,7 @@ h2.letter {
 }
 
 /*---------------------------------------------------------------------------------*/
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 721px) {
   .teaser {
     font-size: 2em;
   }
