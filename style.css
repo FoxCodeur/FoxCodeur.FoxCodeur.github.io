@@ -931,6 +931,14 @@ header nav a:hover {
   padding-right: 15px;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 800px) {
+  .glossaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
 
 .badge {
   font-size: 75%;
@@ -954,6 +962,15 @@ header nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: right;
+}
+@media screen and (max-width: 800px) {
+  .illustration {
+    order: 1;
+  }
+  
+  .definition {
+    order: 2;
+  }
 }
 .gallery {
   box-shadow: 3px 3px 15px #999;
