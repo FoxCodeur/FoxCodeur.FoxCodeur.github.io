@@ -928,10 +928,9 @@ header nav a:hover {
 }
 .glossaire {
   display: flex;
-  flex-direction: row;
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: 100px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 800px) {
   .glossaire {
@@ -976,7 +975,7 @@ header nav a:hover {
 }
 .gallery {
   box-shadow: 3px 3px 15px #999;
-  width: 70%;
+  width: 90%;
   margin-bottom: 20px;
 }
 .tiret {
