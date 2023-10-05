@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,900&display=swap');
 .viewport{
-  height: 80vh;
+  height: 75vh;
 }
+/* --------------------------------HOME--------------------------------------- */
+
+
+/* -----------------NAVBAR HEADER BLOG---------------------------------------- */
 .navblog{
   width: 100%;
   display: flex;
@@ -26,16 +30,15 @@ font-family: 'Roboto', sans-serif;
 }
 .home, .articles, .aboutme{
   position: relative;
-  background-color: rgb(230, 34, 77);
+  background-color: rgb(234, 69, 105);
   border-radius: 5px;
   text-align: center;
-  box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
-  padding: 15px;
+  box-shadow: rgb(121, 18, 56) 0px 4px 0px 0px;
+  padding-top: 0.3em;
   margin-bottom: 2em;
   background-repeat: no-repeat;
-  box-sizing: border-box;
-  width: 7em;
-  height: 2.5em;
+  width: 6em;
+  height: 1.5em;
   border: none;
   
   transition: all .3s ease-in-out;
@@ -44,7 +47,7 @@ font-family: 'Roboto', sans-serif;
 }
 .home::before {
   content: "";
-  background-color: rgb(248, 50, 93);
+  background-color: rgb(50, 248, 126);
   width: 0;
   height: 100%;
   position: absolute;
@@ -83,6 +86,7 @@ font-family: 'Roboto', sans-serif;
 .home:hover::before, .articles:hover::before, .aboutme:hover::before {
   width: 100%;
 }
+/* --------------------NAVBAR HEADER BLOG--FIN---------------------------------- */
 
 .leftBlog{
   position: relative;
@@ -108,7 +112,7 @@ border-radius: 8px;
   font-size: 0.9em;
   text-align: right;
   padding: 1em 4% 1em 5%;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.694);
 }
   .left__subtitle {
   font-style: italic;
@@ -128,13 +132,27 @@ border-radius: 8px;
 .rightBlog{
   width: 50%;
   height: 620px;
+  background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
+            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+            radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+            radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
+            linear-gradient(90deg, #ff0000 3%, transparent 100%);
+border-radius: 8px;
+padding: 9px;
+box-sizing: border-box;
   overflow: scroll;
 }
 
 .right__title {
   padding: 0.5em 1em;
   margin: 0;
-  background-color: #f9f9f9;
+  font-size: 2em;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 4px 0px 3px rgba(163, 0, 0, 0.8);
+  font-weight: bold;
 }
 
 .posts {
@@ -170,19 +188,21 @@ border-radius: 8px;
 }
 
 .post__link {
-  font-weight: bold;
+  font-weight:bolder;
   text-decoration: underline;
+  transition: 0.9s all;
+  color: steelblue;
 }
 
 .post__link:hover {
   text-decoration: none;
+  opacity: 0.8;
 }
-
-/* Modifiers sur les catégories */
 
 .post__category {
   display: inline-block;
   text-transform: uppercase;
+  text-decoration: none;
   color: white;
   border-radius: 2px;
   text-align: center;
@@ -199,18 +219,44 @@ border-radius: 8px;
 }
 
 .post__category--color-team {
-  background-color: #dc5e53;
+  background-color: rgba(234, 69, 105, 0.658);
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: rgb(121, 18, 56) 0px 4px 0px 0px;
+  padding-top: 0.3em;
+  margin-bottom: 2em;
+  background-repeat: no-repeat;
+  width: 6em;
+  height: 1.5em;
+  border: none;
 }
 
 .post__category--color-news {
-  background-color: #98dc62;
+  background-color: rgba(234, 69, 105, 0.658);
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: rgb(121, 18, 56) 0px 4px 0px 0px;
+  padding-top: 0.3em;
+  margin-bottom: 2em;
+  background-repeat: no-repeat;
+  width: 6em;
+  height: 1.5em;
+  border: none;
 }
 
 .post__category--color-work {
-  background-color: #0766f0;
+  background-color: rgba(234, 69, 105, 0.658);
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: rgb(121, 18, 56) 0px 4px 0px 0px;
+  padding-top: 0.3em;
+  margin-bottom: 2em;
+  background-repeat: no-repeat;
+  width: 6em;
+  height: 1.5em;
+  border: none;
 }
-
-
+/* ---------------------------------HORLOGE----------------------------------- */
 .wrap-clock {
   position: relative;
   background: rgba(93, 133, 93, 0.032);
@@ -271,4 +317,13 @@ border-radius: 8px;
   background: white;
   border: 2px solid #1b1b1b;
   border-radius: 50%;
+}
+
+
+/* --------------------------------ARTICLES-------------------------------------- */
+
+.postOnePageArticle{
+  padding: 1em;
+  text-align: justify;
+
 }
