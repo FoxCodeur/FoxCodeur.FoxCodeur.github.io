@@ -83,9 +83,9 @@ font-family: 'Roboto', sans-serif;
 .home:hover::before, .articles:hover::before, .aboutme:hover::before {
   width: 100%;
 }
+
 .leftBlog{
   position: relative;
-  border: 1px solid black;
   width: 50%;
   height: 100%;/* ou 100vh */
   padding: 3em 2em 1em;
@@ -94,6 +94,14 @@ font-family: 'Roboto', sans-serif;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+  background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
+            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+            radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+            radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
+            linear-gradient(90deg, transparent 0%, #48abe0 100%);
+border-radius: 8px;
 }
   .left__paragraph {
   border-radius:70px 70px 30px 40px;
@@ -117,7 +125,11 @@ font-family: 'Roboto', sans-serif;
 .wrapperBlog{
   display: flex;
 }
-
+.rightBlog{
+  width: 50%;
+  height: 620px;
+  overflow: scroll;
+}
 
 .right__title {
   padding: 0.5em 1em;
@@ -199,9 +211,6 @@ font-family: 'Roboto', sans-serif;
 }
 
 
-
-
-
 .wrap-clock {
   position: relative;
   background: rgba(93, 133, 93, 0.032);
@@ -213,6 +222,7 @@ font-family: 'Roboto', sans-serif;
   height: 350px;
   border-radius: 50%;
   padding: 5px;
+  margin-bottom: 2em;
 }
 .minute,
 .heure {
