@@ -19,21 +19,13 @@
   padding-top: 10px;
 }
 
-@media screen and (max-width: 749px){
-  .navblog{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
 
-}
 .navblog a{
-text-decoration: none;
-color: white;
-font-weight: bolder;
-font-size: 0.9em;
-font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 0.9em;
+  font-family: 'Roboto', sans-serif;
 }
 .home, .articles, .aboutme{
   position: relative;
@@ -77,19 +69,6 @@ font-family: 'Roboto', sans-serif;
   transition: width 700ms ease-in-out;
   display: inline-block;
 }
-.articles::before {
-  content: "";
-  background-color: rgb(37, 3, 10);
-  width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  transition: width 700ms ease-in-out;
-  display: inline-block;
-  transform: rotate(90deg);
-}
 
 .home:hover::before, .articles:hover::before, .aboutme:hover::before {
   width: 100%;
@@ -108,28 +87,28 @@ font-family: 'Roboto', sans-serif;
   justify-content: space-between;
   align-items: flex-end;
   background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
-            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
-            radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
-            radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
-            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
-            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
-            linear-gradient(90deg, transparent 0%, #48abe0 100%);
-border-radius: 8px;
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
+    linear-gradient(90deg, transparent 0%, #48abe0 100%);
+  border-radius: 8px;
 }
-  .left__paragraph {
+.left__paragraph {
   border-radius:70px 70px 30px 40px;
   font-size: 0.9em;
   text-align: right;
   padding: 1em 4% 1em 5%;
   background-color: rgba(0, 0, 0, 0.694);
 }
-  .left__subtitle {
+.left__subtitle {
   font-style: italic;
   font-size: 1em;
   font-weight: 400;
 }
 
-    .left__subtitle-strong {
+.left__subtitle-strong {
   font-style: normal;
   font-size: 1.6em;
   font-weight: 700;
@@ -137,21 +116,24 @@ border-radius: 8px;
 
 .wrapperBlog{
   display: flex;
+  height: 100%;
 }
+
+
 .rightBlog{
   width: 50%;
-  height: 620px;
+  height: 100%;
   margin-top: 1em;
   background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
-            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
-            radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
-            radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
-            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
-            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
-            linear-gradient(90deg, #ff0000 3%, transparent 100%);
-border-radius: 8px;
-padding: 9px;
-overflow: scroll;
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
+    linear-gradient(90deg, #ff0000 3%, transparent 100%);
+  border-radius: 8px;
+  padding: 9px;
+  overflow: scroll;
 }
 
 .right__title {
@@ -168,14 +150,14 @@ overflow: scroll;
   display: flex;
   flex-wrap: wrap;
   background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 5px, transparent 5px) 0% 0%/8px 8px no-repeat,
-            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 5px, transparent 5px) 100% 0%/8px 8px no-repeat,
-            radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 5px, transparent 5px) 0% 100%/8px 8px no-repeat,
-            radial-gradient(circle at 0 0, #ffffff 0, #ffffff 5px, transparent 5px) 100% 100%/8px 8px no-repeat,
-            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 6px) calc(100% - 16px) no-repeat,
-            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 6px) no-repeat,
-            linear-gradient(90deg, transparent 0%, #e04848 100%);
-border-radius: 8px;
-padding: 7px;
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 5px, transparent 5px) 100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 5px, transparent 5px) 0% 100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 5px, transparent 5px) 100% 100%/8px 8px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 6px) calc(100% - 16px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 6px) no-repeat,
+    linear-gradient(90deg, transparent 0%, #e04848 100%);
+  border-radius: 8px;
+  padding: 7px;
 }
 
 .post {
@@ -398,4 +380,40 @@ padding: 7px;
   color: rgb(0, 0, 0);
   font-weight: bolder;
   text-decoration: none;
+}
+
+/* ------------------------------media queries-------------------------------- */
+
+@media screen and (max-width: 749px){
+  .navblog{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .leftBlog{
+    display: none;
+  }
+  .rightBlog {
+    float: left;
+    width: 100%;
+    margin-top: 1em;
+  }
+  .posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .post {
+    float: left;
+    width: 100%;
+  }
+  .articles, .aboutme{
+    margin-top: -0.1em;
+  }
+  
 }
