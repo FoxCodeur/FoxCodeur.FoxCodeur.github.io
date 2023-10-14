@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Dosis:wght@300;400&family=Oswald:wght@300&family=Poppins:wght@300;500;700&family=Raleway:wght@300;400&family=Roboto:wght@300&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Dosis:wght@300;400&family=Jost:ital,wght@0,300;0,400;1,400&family=Oswald:wght@300&family=Poppins:wght@300;500;700&family=Raleway&family=Roboto:wght@300&family=Ubuntu&family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+
 /*les composants*/
 .grid {
   display: flex;
@@ -248,6 +251,63 @@ img {
   margin: 0 auto;
   flex: 1 0 auto;
 }
+
+/* mode sombre */
+.container-btn-dark {
+  display: flex;
+  align-items: baseline;
+  font-style: italic;
+  width: 87%;
+  margin: 0 auto;
+}
+.container-btn-dark h3{
+    
+    font-family: "Arial Black", Gadget, sans-serifpx;
+    color: #2f8db5;
+    text-shadow: #000000 1px 1px 1px;
+}
+.dark-themeBtn{
+  margin-top: 1em;
+width: 2em;
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 1.2em;
+font-weight: 700;
+color: #ffffff;
+background-color: #0066ccb7;
+padding: 10px 30px;
+border: 2px solid #0066cc;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+
+}
+.dark-themeBtn:hover{
+font-size: 1.5em;
+transition : 1000ms;
+padding: 10px 50px;
+background-color: #fff;
+color: #00000012;
+border: solid 2px #0066cc;
+
+}
+/* le dark mode */
+.darkZoneContain.dark-mode {
+  background-color: #000000e8;
+  color: white;
+  }
+  .darkZoneContain.dark-mode h2 {
+    color: #dde0ff;
+  }
+  
+
+
+/* ------------- */
 
 /*bouton burger qui s'active uniquement en mode petit écran pour le menu principal*/
 /* -------------------------------------------------------------------- */
@@ -568,7 +628,7 @@ header nav a:hover {
   z-index: 100;
   cursor: pointer;
   bottom: 20px;
-  right: 8px;
+  right: 10px;
   opacity: 60%;
   border: 1px solid black;
   visibility: hidden;

@@ -1,8 +1,6 @@
 let image_slider = document.querySelectorAll(".image_slider");
 // On crée une variable de la première image, la zéro en partant du haut du tableau
 let etape = 0;
-
-
 // le nombre d'image total (10)
 let nb_image = image_slider.length;
 // fonction qui enlève la classe active sur toutes les images.
@@ -46,3 +44,12 @@ cliches.forEach((cliche) => {
     clicheSound();
   });
 });
+
+// setInterval(() => {
+//   etape++;
+//   if (etape >= nb_image) {
+//     etape = 0;
+//   }
+//   enleverActiveImage();
+//   image_slider[etape].classList.add("active");
+// }, 3000);

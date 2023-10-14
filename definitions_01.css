@@ -9,6 +9,13 @@
 /*----------------------------- A----------------------------- */
 /* Les acteurs du film */
 /* -----------------------slider------------------------------- */
+/* classe momentanée */
+.slider__img--current {
+  opacity: 1;
+  z-index: 1;
+}
+/* classe momentanée fin */
+
 .slider-movie-actors {
   position: relative;
   width: 100%;
