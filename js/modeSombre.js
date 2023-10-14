@@ -7,17 +7,25 @@ const modeSombre = {
     console.log('modeSombre : init');
 
     // on ajoute les différents écouteurs d'événement
-    const darkModeButton = document.querySelector(".dark-themeBtn");
-    darkModeButton.addEventListener("click", modeSombre.handleShow);
+    const bouton = document.querySelector(".dark-themeBtn");
+    bouton.addEventListener("click", modeSombre.handleShow);
 
     // Assurez-vous d'obtenir une référence à la zone sombre
     modeSombre.containerDuModeSombre = document.querySelector(".darkZoneContain");
+    const isDarkmodeActivated = localStorage.getItem("darktheme");
+    if(isDarkmodeActivated==="true"){
+      modeSombre.containerDuModeSombre.classList.add("dark-mode");
+  }
   },
 
   handleShow: function () {
     // Utilisez la référence à la zone sombre pour basculer la classe
-    if (modeSombre.containerDuModeSombre) {
-      modeSombre.containerDuModeSombre.classList.toggle("dark-mode");
+    modeSombre.containerDuModeSombre.classList.toggle("dark-mode");
+    if (modeSombre.containerDuModeSombre.classList.contains("dark-mode") ) {
+      // enregistrer la valeur dans le storage clé+valeur
+      localStorage.setItem("darktheme","true");
+    } else{
+      localStorage.setItem("darktheme","false");
     }
   }
 }
