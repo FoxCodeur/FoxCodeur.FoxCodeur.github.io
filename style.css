@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Dosis:wght@300;400&family=Jost:ital,wght@0,300;0,400;1,400&family=Oswald:wght@300&family=Poppins:wght@300;500;700&family=Raleway&family=Roboto:wght@300&family=Ubuntu&family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 
 /*les composants*/
 .grid {
@@ -252,8 +252,9 @@ img {
   flex: 1 0 auto;
 }
 
-/* mode sombre */
+/* -----------------------MODE SOMBRE----------------------------------------- */
 .container-btn-dark {
+  position: relative;
   display: flex;
   align-items: baseline;
   font-style: italic;
@@ -301,13 +302,57 @@ border: solid 2px #0066cc;
   background-color: #000000e8;
   color: white;
   }
-  .darkZoneContain.dark-mode h2 {
+  .lightZoneContain.light-mode{
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .darkZoneContain.dark-mode {
     color: #dde0ff;
   }
-  
+  .container-toggle{
+    position: relative;
+    margin-left: 0.7em;
+  }
+  .toggle{
+    position: absolute;
+    top: -24px;
+    left: 10px;
+    width: 4em;
+    height: 2em;
+    border-radius: 30px;
+    background: #444;
+    transition: background-color 1s; /* Ajoutez cette ligne pour la transition */
+    
+  }
+
+  .toggle .toggle-button{
+      position: absolute;
+      cursor: pointer;
+      top: 3px;
+      left: 10px;
+      width: 1.7em;
+      height: 1.7em;
+      border-radius: 50%;
+      background: #ffffff;
+  }
+  .container-toggle .toggle.active{
+    background: darkred;
+  }
+  .container-toggle .toggle.active .toggle-button{
+    left: 2em;
+    transition: left 0.3s; /* Ajoutez cette ligne pour la transition */
+  }
+  .text-toggle{
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    font-size: 1.1em;
+    top: -17px;
+    left: 91px;
+  }
 
 
-/* ------------- */
+/* ------------------------------MODE SOMBRE FIN----------------------------- */
 
 /*bouton burger qui s'active uniquement en mode petit écran pour le menu principal*/
 /* -------------------------------------------------------------------- */

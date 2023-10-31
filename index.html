@@ -35,7 +35,7 @@
   <!-- ----------------------------------------------------------------- -->
 
   <body>
-    <div class="darkZoneContain">
+    <div class="darkZoneContain lightZoneContain">
     <section class="progress-bar"></section>
     <section>
       <img
@@ -75,6 +75,9 @@
             </li>
             <li class="onglets">
               <a href="games.html" class="buttonMobile">Games</a>
+            </li>
+            <li class="onglets">
+              <a href="aboutMe.html" class="buttonMobile">portfolio</a>
             </li>
             <li class="onglets">
               <a href="blog.html" class="buttonMobile">Blog</a>
@@ -118,7 +121,15 @@
       </div>
     </header>
     <!-- -----------------------------------------FIN HEADER------------------------------------------------------------------ -->
-    <div class="container-btn-dark"><btn class="dark-themeBtn">Dark</btn><h3>Theme</h3></div>
+    <div class="container-btn-dark">
+      <btn class="dark-themeBtn">Dark</btn><h3>Theme</h3>
+        <div class="container-toggle">
+          <div class="toggle">
+            <div class="toggle-button"></div>
+          </div>
+          <div class="text-toggle">OFF</div>
+        </div>
+      </div>
     <div class="a_container">
       
       <!--On crée notre nouvelle boite qui va contenir deux sections, texte à gauche et image droite  -->
@@ -729,6 +740,7 @@
     <script src="js/scrollFoxHide.js"></script>
     <script src="js/burger.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/toggleButton.js"></script>
     <script src="./js/progressBarIndex.js"></script>
     <script src="js/bouton_qui_monte.js"></script>
     <script src="js/flowers-index.js"></script>
