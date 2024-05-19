@@ -263,7 +263,7 @@ img {
 }
 .container-btn-dark h3{
     
-    font-family: "Arial Black", Gadget, sans-serifpx;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: #2f8db5;
     text-shadow: #000000 1px 1px 1px;
 }
@@ -1030,15 +1030,13 @@ header nav a:hover {
 @media screen and (min-width: 750px) {
   .glossaire {
     column-count: 2;
-  }
-}
-.glossaire {
-  display: flex;
+    display: flex;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  }
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 750px) {
   .glossaire {
     display: flex;
     flex-direction: column;

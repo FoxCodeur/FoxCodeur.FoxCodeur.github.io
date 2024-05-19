@@ -554,6 +554,11 @@
   display: block;
   font-weight: 700;
   text-shadow: 2px 2px 2px #fc4445;
+  .elements {
+    display: block;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px #fc4445;
+  }
 }
 @keyframes carousel {
   0%,
