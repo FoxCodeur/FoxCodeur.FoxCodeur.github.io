@@ -2,7 +2,6 @@ let image_slider = document.querySelectorAll(".image_slider");
 // On crée une variable de la première image, la zéro en partant du haut du tableau
 let etape = 0;
 
-
 // le nombre d'image total (10)
 let nb_image = image_slider.length;
 // fonction qui enlève la classe active sur toutes les images.
@@ -12,7 +11,7 @@ function enleverActiveImage() {
 // ----------------------------------------------------------------------------
 let suivant = document.querySelector(".suivant");
 suivant.addEventListener("click", handleClickButtonNextImage);
-function handleClickButtonNextImage(){
+function handleClickButtonNextImage() {
   etape++;
   if (etape >= nb_image) {
     etape = 0;
@@ -23,9 +22,9 @@ function handleClickButtonNextImage(){
 
 // ----------------------------------------------------------------------------
 let precedent = document.querySelector(".precedent");
-precedent.addEventListener("click", handleClickButtonPrevImage); 
-function handleClickButtonPrevImage(){
-etape--;
+precedent.addEventListener("click", handleClickButtonPrevImage);
+function handleClickButtonPrevImage() {
+  etape--;
   if (etape < 0) {
     etape = nb_image - 1;
   }
